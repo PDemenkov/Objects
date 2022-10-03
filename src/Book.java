@@ -1,6 +1,6 @@
 public class Book {
-    String authorName;
-    String bookName;
+  private   String authorName;
+  private   String bookName;
     int releaseYear;
 
     public Book(String authorName, String bookName, int releaseYear) {

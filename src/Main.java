@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         Book book = new Book("King", "Shining", 1977);
-        Book book1 = new Book("Hitchcock", "Shining", 1962);
+        Book book1 = new Book("Hitchcock", "Ghostly Gallery", 1962);
         Author author = new Author("Stephen", "King");
         Author author1 = new Author("Alfred", "Hitchcock");
         System.out.println("Книга 1- " + author.getName() + " " + author.getSurName() + " " + book.getBookName() + " Год издания- " + book.releaseYear);

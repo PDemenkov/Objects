@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Book {
     private String authorName;
     private String bookName;
@@ -21,5 +23,23 @@ public class Book {
 
     public void setReleaseYear(int releaseYear) {
         this.releaseYear = releaseYear;
+    }
+
+    @Override
+    public String toString() {
+        return Author.class.toString(); //Это делегирование ?
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return releaseYear == book.releaseYear && Objects.equals(authorName, book.authorName) && Objects.equals(bookName, book.bookName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(authorName, bookName, releaseYear);
     }
 }

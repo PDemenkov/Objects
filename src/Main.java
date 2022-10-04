@@ -9,5 +9,7 @@ public class Main {
         System.out.println("Книга 1- " + author.getName() + " " + author.getSurName() + " " + book.getBookName() + " Год издания- " + book.getReleaseYear());
         book.setReleaseYear(1990);
         System.out.println("Переиздание Книги 2- " + author1.getName() + " " + author1.getSurName() + " " + book1.getBookName() + " Год переиздания- " + book1.getReleaseYear());
+        System.out.println(book);
+        System.out.println(author);
     }
 }

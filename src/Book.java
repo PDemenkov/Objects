@@ -27,7 +27,11 @@ public class Book {
 
     @Override
     public String toString() {
-        return Author.class.toString(); //Это делегирование ?
+        return "Book{" +
+                "authorName='" + Author.class.getName() + '\'' +
+                ", bookName='" + bookName + '\'' +
+                ", releaseYear=" + releaseYear +
+                '}';
     }
 
     @Override
